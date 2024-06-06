@@ -953,8 +953,8 @@ main() {
     sleep 1s
     if systemctl -q is-active xray; then
       echo "info: Enable and start the Xray service"
-	  CONFIG_FILE="/etc/xray/config.json"
-	  cat > "$CONFIG_FILE" <<EOF
+      CONFIG_FILE="/etc/xray/config.json"
+      cat > "$CONFIG_FILE" <<EOF
 {
   "inbounds": [
     {
@@ -980,7 +980,8 @@ main() {
   ]
 }
 EOF
-	  systemctl restart xray
+      systemctl restart xray
+      echo "ok....搞定了兄弟！"
     else
       echo "warning: Failed to enable and start the Xray service"
     fi
