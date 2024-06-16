@@ -953,7 +953,7 @@ main() {
     sleep 1s
     if systemctl -q is-active xray; then
       echo "info: Enable and start the Xray service"
-      CONFIG_FILE="/etc/xray/config.json"
+      CONFIG_FILE="/usr/local/etc/xray/config.json"
       cat > "$CONFIG_FILE" <<EOF
 {
   "inbounds": [
