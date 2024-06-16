@@ -981,7 +981,9 @@ main() {
 }
 EOF
       systemctl restart xray
-      echo "ok....搞定了兄弟！"
+      echo -e "\033[31mok....搞定了兄弟！\033[0m"
+      echo -e "\033[31mok....搞定了兄弟！\033[0m"
+      echo -e "\033[31mok....搞定了兄弟！\033[0m"
     else
       echo "warning: Failed to enable and start the Xray service"
     fi
